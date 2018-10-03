@@ -242,6 +242,8 @@ spec:
           value: "netdns=go"
         - name: CORE_VM_DOCKER_ATTACHSTDOUT
           value: "true"
+        - name: CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE
+          value: "--network host"
         volumeMounts:
         - mountPath: /shared
           name: shared
@@ -330,6 +332,8 @@ spec:
           value: "netdns=go"
         - name: CORE_VM_DOCKER_ATTACHSTDOUT
           value: "true"
+        - name: CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE
+          value: "--network host"
         volumeMounts:
         - mountPath: /shared
           name: shared
